@@ -5,7 +5,7 @@ class TransactionsList extends Component {
   render() {
     return (
       <div className="TransactionsList">
-
+        turd
       </div>
     );
   }

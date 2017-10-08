@@ -1,26 +1,17 @@
 import React, { Component } from 'react';
-import CurrentMonthBudget from './components/CurrentMonthBudget.js';
-import HistoricalData from './components/HistoricalData.js';
-import CurrentWeeklyData from './components/CurrentWeeklyData.js';
-import TransactionsList from './components/TransactionsList.js';
+import './App.css'
+import Column_1 from './components/Column_1'
+import Column_2 from './components/Column_2'
 
 class App extends Component {
-  constructor() {
-    super();
-
-
-  }
-
   render() {
     return (
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">4seer</h1>
         </header>
-        <CurrentMonthBudget />
-        <HistoricalData />
-        <CurrentWeeklyData />
-        <TransactionsList />
+        <Column_1 />
+        <Column_2 />
       </div>
     );
   }
