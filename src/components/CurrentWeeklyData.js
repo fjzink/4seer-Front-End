@@ -7,10 +7,8 @@ class CurrentWeeklyData extends Component {
     
     return (
       <div className="CurrentWeeklyData">
-      	<h3>Current Weekely Budget</h3>
-      		<div>
+      	<h3 className="title-style">Current Weekly Budget</h3>
       			{this.props.weekely}
-      		</div>
       </div>
     );
   }

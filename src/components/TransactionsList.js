@@ -12,7 +12,7 @@ class TransactionsList extends Component {
       <div className="TransactionsList">
         <table>
           <tbody>
-            <tr>
+            <tr className="title-style">
               <th>Date</th>
               <th>Description</th>
               <th>Amount</th>
