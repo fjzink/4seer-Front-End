@@ -7,7 +7,9 @@ class Column_2 extends Component {
     return (
       <div className="Column-2">
         <HistoricalData />
-        <TransactionsList />
+        <TransactionsList 
+          transactionsList={this.props.transactionsList}
+        />
       </div>
     );
   }
