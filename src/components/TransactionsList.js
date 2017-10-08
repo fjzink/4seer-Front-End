@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import styles from '../App.css';
 
 class TransactionsList extends Component {
 

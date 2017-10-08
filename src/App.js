@@ -3,6 +3,7 @@ import CurrentMonthBudget from './components/CurrentMonthBudget.js';
 import HistoricalData from './components/HistoricalData.js';
 import CurrentWeeklyData from './components/CurrentWeeklyData.js';
 import TransactionsList from './components/TransactionsList.js';
+import styles from './App.css';
 import axios from 'axios';
 
 class App extends Component {
@@ -35,7 +36,7 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">4seer</h1>
         </header>
-        <CurrentMonthBudget />
+        <CurrentMonthBudget accounts={this.state.accounts}/>
         <HistoricalData />
         <CurrentWeeklyData />
         <TransactionsList transactionsList={this.state.transactionsList}/>
