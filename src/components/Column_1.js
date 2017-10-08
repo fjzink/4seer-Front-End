@@ -6,7 +6,9 @@ class Column_1 extends Component {
   render() {
     return (
       <div className="Column-1">
-        <CurrentMonthBudget />
+        <CurrentMonthBudget 
+          account={this.props.account}
+        />
         <CurrentWeeklyData />
       </div>
     );
