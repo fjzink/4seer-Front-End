@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import styles from '../App.css';
 
 class CurrentMonthBudget extends Component {
 	constructor(props){

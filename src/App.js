@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import CurrentMonthBudget from './components/CurrentMonthBudget.js';
-import HistoricalData from './components/HistoricalData.js';
-import CurrentWeeklyData from './components/CurrentWeeklyData.js';
-import TransactionsList from './components/TransactionsList.js';
+import './App.css'
+import Column_1 from './components/Column_1'
+import Column_2 from './components/Column_2'
 import styles from './App.css';
 import axios from 'axios';
 
@@ -17,7 +16,7 @@ class App extends Component {
   }
 
   loadData() {
-    axios.get('http://localhost:3000/api/accounts/1').then(response => {
+    axios.get('http://localhost:3000/api/accounts/2').then(response => {
       this.setState({
         account: response.data[0],
         transactionsList: response.data[1]
@@ -28,7 +27,7 @@ class App extends Component {
   componentDidMount() {
     this.loadData();
   }
-
+  
   render() {
 
     return (
@@ -36,10 +35,12 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">4seer</h1>
         </header>
-        <CurrentMonthBudget accounts={this.state.accounts}/>
-        <HistoricalData />
-        <CurrentWeeklyData />
-        <TransactionsList transactionsList={this.state.transactionsList}/>
+        <Column_1 
+          account={this.state.account}
+        />
+        <Column_2 
+          transactionsList={this.state.transactionsList}
+        />
       </div>
     );
   }
