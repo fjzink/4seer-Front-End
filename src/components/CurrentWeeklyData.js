@@ -4,7 +4,10 @@ class CurrentWeeklyData extends Component {
   render() {
     return (
       <div className="CurrentWeeklyData">
-        turd
+      	<h3>Current Monthly Budget</h3>
+      		<div>
+      			chart
+      		</div>
       </div>
     );
   }
