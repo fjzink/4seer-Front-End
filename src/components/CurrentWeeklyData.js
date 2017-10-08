@@ -3,11 +3,13 @@ import '../App.css'
 
 class CurrentWeeklyData extends Component {
   render() {
+    
+    
     return (
       <div className="CurrentWeeklyData">
-      	<h3>Current Monthly Budget</h3>
+      	<h3>Current Weekely Budget</h3>
       		<div>
-      			chart
+      			{this.props.weekely}
       		</div>
       </div>
     );
