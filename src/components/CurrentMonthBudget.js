@@ -6,7 +6,7 @@ class CurrentMonthBudget extends Component {
     return (
       <div className="CurrentMonthBudget">
       	<h3 className="title-style">Current Monthly Budget</h3>
-      		<div id="monthly-budget-style">
+      		<div className="budget-style">
              $ {this.props.monthly}
           </div>
       </div>
