@@ -7,7 +7,7 @@ class Column_2 extends Component {
   render() {
     return (
       <div className="Column-2">
-        <HistoricalData />
+        <HistoricalData transactionsList={this.props.transactionsList}/>
         <TransactionsList
           transactionsList={this.props.transactionsList}
         />
