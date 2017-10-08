@@ -1,10 +1,16 @@
 import React, { Component } from 'react';
 import CurrentMonthBudget from './components/CurrentMonthBudget.js';
-import HistorialData from './components/HistorialData.js';
+import HistoricalData from './components/HistoricalData.js';
 import CurrentWeeklyData from './components/CurrentWeeklyData.js';
 import TransactionsList from './components/TransactionsList.js';
 
 class App extends Component {
+  constructor() {
+    super();
+
+
+  }
+
   render() {
     return (
       <div className="App">
@@ -12,7 +18,7 @@ class App extends Component {
           <h1 className="App-title">4seer</h1>
         </header>
         <CurrentMonthBudget />
-        <HistorialData />
+        <HistoricalData />
         <CurrentWeeklyData />
         <TransactionsList />
       </div>
