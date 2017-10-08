@@ -36,7 +36,7 @@ class App extends Component {
           <h1 className="App-title">4seer</h1>
         </header>
         <Column_1 
-          accounts={this.state.accounts}
+          account={this.state.account}
         />
         <Column_2 
           transactionsList={this.state.transactionsList}
