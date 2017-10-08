@@ -5,7 +5,7 @@ class HistoricalData extends Component {
   render() {
     return (
       <div className="HistoricalData">
-      		<h3>Current Monthly Budget</h3>
+      		<h3 className="title-style">Current Monthly Budget</h3>
       		<div>
       			chart
       		</div>

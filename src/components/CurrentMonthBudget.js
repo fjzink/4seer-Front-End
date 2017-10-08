@@ -15,8 +15,10 @@ class CurrentMonthBudget extends Component {
 
     return (
       <div className="CurrentMonthBudget">
-      	<h3>Current Monthly Budget</h3>
-      		{this.props.account.current_balance}
+      	<h3 className="title-style">Current Monthly Budget</h3>
+      		<div id="monthly-budget-style">
+          {this.props.account.current_balance}
+          </div>
       </div>
     );
   }
