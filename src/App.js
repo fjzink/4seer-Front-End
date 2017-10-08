@@ -10,15 +10,17 @@ class App extends Component {
     super(props);
 
     this.state = {
-      accounts: "",
+      account: "",
       transactionsList: []
     }
   }
 
   loadData() {
     axios.get('http://localhost:3000/api/accounts/1').then(response => {
-      console.log(response);
-      debugger
+      this.setState({
+        account: response.data[0],
+        transactionsList: response.data[1]
+      })
     }).catch(errors => console.log(errors));
   }
 
@@ -27,6 +29,8 @@ class App extends Component {
   }
 
   render() {
+    const { account, transactionsList} = this.state;
+
     return (
       <div className="App">
         <header className="App-header">
@@ -35,7 +39,7 @@ class App extends Component {
         <CurrentMonthBudget />
         <HistoricalData />
         <CurrentWeeklyData />
-        <TransactionsList />
+        <TransactionsList tList={transactionsList}/>
       </div>
     );
   }
