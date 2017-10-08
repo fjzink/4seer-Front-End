@@ -13,7 +13,6 @@ class App extends Component {
       accounts: "",
       transactionsList: []
     }
-    this.loadData = this.loadData.bind(this);
   }
 
   loadData() {
