@@ -9,9 +9,10 @@
 
 .App-header {
   background-color: #222;
-  height: 150px;
+  height: 50px;
   padding: 20px;
   color: white;
+  border: 1px black;
 }
 
 .App-title {
@@ -25,4 +26,38 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+.CurrentMonthBudget {
+  float: left;
+  border: 3px solid blue;
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  margin: auto;
+}
+
+.HistoricalData {
+  float: right;
+  border: 3px solid blue;
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  margin: auto;
+}
+
+.CurrentWeeklyData {
+  float: left;
+  border: 3px solid blue;
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  margin: auto;
+}
+
+.TransactionsList{
+  border: 3px solid blue;
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  margin: auto;
 }
