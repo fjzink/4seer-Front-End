@@ -5,12 +5,19 @@ import CurrentWeeklyData from './CurrentWeeklyData.js';
 
 class Column_1 extends Component {
   render() {
+    const {account} = this.props;
+
+    let betterEstimate = account.current_balance *  .75;
+    
     return (
       <div className="Column-1">
-        <CurrentMonthBudget
-          account={this.props.account}
+        <CurrentMonthBudget 
+          monthly={this.betterEstimate}
         />
-        <CurrentWeeklyData />
+        <CurrentWeeklyData 
+          weekly={this.betterEstimate}
+        />
+
       </div>
     );
   }
