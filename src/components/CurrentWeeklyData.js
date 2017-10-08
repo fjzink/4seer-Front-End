@@ -4,24 +4,6 @@ import ReactDOM from 'react-dom';
 
 class CurrentWeeklyData extends Component {
 
-   //  componentDidMount() {
-   //     if (this.props.modules) {
-   //         this.props.modules.forEach(function (module) {
-   //             module(Highcharts);
-   //         });
-   //     }
-   //     // Set container which the chart should render to.
-   //     this.chart = new Highcharts[this.props.type || "Chart"](
-   //         this.props.container,
-   //         this.props.options
-   //     );
-   // }
-   // //Destroy chart before unmount.
-   // componentWillUnmount() {
-   //     this.chart.destroy();
-   // }
-   
-
   render() {
     const plotOptions = {
     series: {
