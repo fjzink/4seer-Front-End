@@ -3,7 +3,11 @@ import '../App.css'
 
 class TransactionsList extends Component {
 
+
+
   render() {
+    let cutList = this.props.transactionsList.slice(0, 5);
+
     return(
       <div className="TransactionsList">
         <table>
@@ -13,7 +17,7 @@ class TransactionsList extends Component {
               <th>Description</th>
               <th>Amount</th>
             </tr>
-            {this.props.transactionsList.map(transaction => {
+            {cutList.map(transaction => {
                 return(
                 <tr>
                   <td>{transaction.date_time.slice(0, 10)}</td>
