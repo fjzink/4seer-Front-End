@@ -12,12 +12,11 @@ class Column_1 extends Component {
     return (
       <div className="Column-1">
         <CurrentMonthBudget 
-          monthly={this.betterEstimate}
+          monthly={betterEstimate} 
         />
         <CurrentWeeklyData 
-          weekly={this.betterEstimate}
+          weekly={betterEstimate}
         />
-
       </div>
     );
   }
