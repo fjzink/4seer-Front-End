@@ -26,9 +26,12 @@
 }
 
 .CurrentMonthBudget, .CurrentWeeklyData, .HistoricalData, .TransactionsList {
-  border: dashed red 3px;
+  border: solid black 3px;
+  border-radius: 1em;
   flex: 1;
   margin: 10px;
+  padding: 1em;
+  box-shadow: 5px 5px 3px grey;
 }
 
 .Column-1, .Column-2 {
@@ -39,45 +42,7 @@
   flex: 1;
 }
 
-/*.HistoricalData, .TransactionsList {
-  display: inline-block;
-}*/
-
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
-}
-.CurrentMonthBudget {
-  float: left;
-  border: 3px solid blue;
-  width: 50%;
-  height: 50%;
-  position: absolute;
-  margin: auto;
-}
-
-.HistoricalData {
-  float: right;
-  border: 3px solid blue;
-  width: 50%;
-  height: 50%;
-  position: absolute;
-  margin: auto;
-}
-
-.CurrentWeeklyData {
-  float: left;
-  border: 3px solid blue;
-  width: 50%;
-  height: 50%;
-  position: absolute;
-  margin: auto;
-}
-
-.TransactionsList{
-  border: 3px solid blue;
-  width: 50%;
-  height: 50%;
-  position: absolute;
-  margin: auto;
 }
