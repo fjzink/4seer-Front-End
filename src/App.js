@@ -30,7 +30,6 @@ class App extends Component {
   }
 
   render() {
-    const { account, transactionsList} = this.state;
 
     return (
       <div className="App">
@@ -40,7 +39,7 @@ class App extends Component {
         <CurrentMonthBudget accounts={this.state.accounts}/>
         <HistoricalData />
         <CurrentWeeklyData />
-        <TransactionsList tList={transactionsList}/>
+        <TransactionsList transactionsList={this.state.transactionsList}/>
       </div>
     );
   }

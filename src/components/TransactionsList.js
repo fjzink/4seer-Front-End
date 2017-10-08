@@ -2,16 +2,35 @@ import React, { Component } from 'react';
 import styles from '../App.css';
 
 class TransactionsList extends Component {
+
+
   render() {
-    return (
+
+    return(
       <div className="TransactionsList">
-      		<h3>Current Monthly Budget</h3>
-      		<div>
-      			chart
-      		</div>
+        <table>
+          <tbody>
+            <tr>
+              <th>Date</th>
+              <th>Description</th>
+              <th>Amount</th>
+            </tr>
+            {this.props.transactionsList.map(transaction => {
+                return(
+                <tr>
+                  <td>{transaction.date_time.slice(0, 10)}</td>
+                  <td>{transaction.description.slice(0, 15)}</td>
+                  <td>{transaction.posted_amount}</td>
+                </tr>
+              )
+            })}
+          </tbody>
+        </table>
       </div>
     );
   }
+
 }
 
 export default TransactionsList;
+
